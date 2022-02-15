@@ -13,5 +13,16 @@
 //b = 30;
 
 
-let a = 10, b = 10, c = 10, d = 10, x = a + b;
-console.log(x)
+let a = 10, 
+    b = 20, 
+    c = 'Hola ', 
+    d = 'Spiderman', 
+    x = a + b;
+
+const saludo = c + d;
+//console.log("%c Mis variables", 'color:white; font-weight: bold')
+//console.log({a}); //con las llaves imprimo la variable y su valor
+//console.warn({b});
+//console.error({c});
+
+//console.table({a, b, c, d, x})
