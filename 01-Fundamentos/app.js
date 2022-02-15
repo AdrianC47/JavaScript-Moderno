@@ -1,4 +1,4 @@
-// console.log(console.log("Hello friend"));
+console.log(console.log("Hello friend"));
 
 //let a = 10;//Ambas variables let y var
 //var b = 10; //sirven para decirle a Javascript que estoy creando una nueva variable 
@@ -20,9 +20,11 @@ let a = 10,
     x = a + b;
 
 const saludo = c + d;
-//console.log("%c Mis variables", 'color:white; font-weight: bold')
-//console.log({a}); //con las llaves imprimo la variable y su valor
-//console.warn({b});
-//console.error({c});
 
-//console.table({a, b, c, d, x})
+console.log("%c Mis variables", 'color:white; font-weight: bold')
+console.log({a}); //con las llaves imprimo la variable y su valor
+console.warn({b});
+console.error({c});
+
+c = 'Hola de nuevo';
+console.table({a, b, c, d, x});
