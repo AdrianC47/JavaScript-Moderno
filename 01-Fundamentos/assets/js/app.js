@@ -30,4 +30,4 @@ console.error({ c });
 c = 'Hola de nuevo';
 console.table({a, b, c, d, x});
 
-var  miNombre = 'Luis';
+let miNuevoNombre = 'Fernando Herrera';
