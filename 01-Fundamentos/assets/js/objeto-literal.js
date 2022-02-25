@@ -1,4 +1,4 @@
-let personaje = { //Los objetos literales son objetos que tienen pares de valores(propiedad)
+const personaje = { //Los objetos literales son objetos que tienen pares de valores(propiedad)
     nombre: 'Tony Stark',
     codeName: 'Ironman',
     vivo: false,
@@ -31,3 +31,34 @@ const x = 'vivo';
 console.log('Vivo', personaje[x]);
 
 console.log('Última Película', personaje['ultima-pelicula'])
+
+// Más detalles 
+
+delete personaje.edad; // Con esto borro un atributo o propiedad 
+console.log( personaje );
+
+personaje.casado = true;
+
+const entriesPares = Object.entries( personaje );
+console.log( entriesPares );
+
+// personaje = true;
+ 
+//Para yo poder poner mis atributos que no se puedan cambiar hago lo siguiente
+Object.freeze (personaje);
+
+personaje.dinero = 100000000;
+personaje.casado = false;
+//Cuando son objetos dentro de otros objetos si se cambian los atributos
+personaje.direccion.ubicacion = 'Costa Rica'; 
+//si yo quisiera que no se cambien  deberia usar el Object.freeze(direccion)
+console.log(personaje);
+
+//Si yo quiero listar todas las propiedades del objeto
+
+const propiedades = Object.getOwnPropertyNames( personaje );
+const valores = Object.values( personaje );
+console.log(propiedades, valores);
+
+//Se adjunta un link  para saber propiedades y metodos de los objetos
+// o informacion general sobre javascript https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object
