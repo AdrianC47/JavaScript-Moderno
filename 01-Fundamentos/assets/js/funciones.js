@@ -54,3 +54,4 @@ const getAleatorio2 = ()=> Math.random();
 console.log(  sumar2(1,2) );
 console.log(getAleatorio()); 
 console.log(getAleatorio2());
+
