@@ -36,12 +36,33 @@ const pedirCarta = () => {
     if (naipe.length === 0) {
         throw 'No existen cartas en el naipe!!';
     }
-        const carta = naipe.pop();
-        console.log(naipe);
-        console.log(carta); //carta debe ser tomada de la baraja
-        return carta;
+    const carta = naipe.pop();
+    console.log(naipe);
+    console.log(carta); //carta debe ser tomada de la baraja
+    return carta;
 
-     
+
 }
 
 // pedirCarta();
+
+const valorCarta = (carta) => {
+
+    const valor = carta.substring(0, carta.length - 1);
+    return (isNaN(valor)) ?
+        (valor === 'A') ? 11 :10
+        : valor *1;
+
+    // let puntos = 0;
+    // if (isNaN(valor)) {
+    //     // console.log('No es un  numero');
+    //     puntos = (valor === 'A') ? 11 : 10; //aqui no se multiplica por 1 ya se estan manejando y retornando como numeros los puntos
+    // } else {
+    //     // console.log('Es un número');
+    //     puntos = valor * 1;//multiplico por 1 para que la variable valor se transforme en un numero
+    // }
+    // console.log(puntos);
+}
+
+const valor =valorCarta(pedirCarta());
+console.log({valor});
