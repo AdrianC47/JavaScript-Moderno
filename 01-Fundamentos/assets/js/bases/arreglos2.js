@@ -23,6 +23,10 @@ console.log({ nuevaLongitud, juegos});
 
 let juegoBorrado= juegos.pop('F-Zero');
 console.log({juegoBorrado, juegos});
+/*
+Si unicamente quiero  eliminar el último elemento de un array y devolverlo se usa el pop() mismo
+así
+variable = arreglo.pop()*/ 
 
 //Ahora si quiero borrar un elemento en una posicion específica
 
