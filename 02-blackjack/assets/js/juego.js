@@ -23,7 +23,7 @@ const crearNaipe = () => {
     }
 
     // console.log(naipe);
-    naipe = _.shuffle(naipe); //haciendo uso de la libreria puedo desordenar un arreglo
+    naipe = _.shuffle(naipe); //haciendo uso de la libreria underscore puedo desordenar un arreglo
     console.log(naipe);
     return naipe;
 }
