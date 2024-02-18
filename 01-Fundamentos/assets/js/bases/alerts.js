@@ -8,4 +8,5 @@ console.log( '****'+ nombre + '*****' );//'' <= esto es un string vacio
 const seleccion = confirm('¿Está seguro de borrar esto?');
 console.log( seleccion );
 
+console.log(miNuevoNombre);
 // console.log (global);

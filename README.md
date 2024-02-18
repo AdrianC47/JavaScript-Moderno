@@ -1,2 +1,3 @@
 # JavaScript
-Se plantea el seguimiento de un curso de JavaScript Moderno de Fernando Herrera
+It is proposed a follow-up to Fernando Herrera JavaScript Moderno course.
+Webpack, Classes, Private Properties, ESNext, Node, Npm, Babel, Hot Reaload, CRUD, File Uploads
