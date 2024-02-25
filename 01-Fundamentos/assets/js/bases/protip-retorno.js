@@ -5,7 +5,7 @@
 //en el caso de que quiera hacerlo con funciones de flecha recordar
 //que se quitan los return y llaves y debo poner parentesis en las variables que retorna las cuales llevan
 //el mismo nombre que el constructor
-const crearPersona = (nombre, apellido) => ({nombre, apellido });
+const crearPersona = (nombre, apellido) => ({nombre, apellido });//({})
 
 
 const persona = crearPersona('Luis Adrian', 'Cabrera Bermeo');
@@ -15,7 +15,10 @@ function imprimeArgumentos(){
     console.log(arguments);
 }
 
-const imprimeArgumentos2 = (edad, ...args) =>{ //el ... rest lo que hace es crear un arreglo con todos los argumentos que son enviados
+// Para poder obtener e  imprimir todos  los argumentos que se manden en funciones de flecha 
+// se hace uso del ... (se llama rest) seguido del nombre para los argumentos puede ser args, arguments, etc
+// Lo que hara es crear un arreglo con todos los argumentos que sean mandados en la funcion
+const imprimeArgumentos2 = (edad, ...args) =>{ 
     //console.log({edad ,args});
     return args;
 };
@@ -23,7 +26,7 @@ const imprimeArgumentos2 = (edad, ...args) =>{ //el ... rest lo que hace es crea
 //es decir esto estaria mal ...args, otracosa
 
 //si tengo un arreglo y quiero que a cada valor de ese arreglo se asigne una variable hago lo siguiente
-const [casado, vivo, nombre, saludo] = imprimeArgumentos2(10,true,false,'Adrian','Hello');
+const [casado, vivo, nombre, saludo] = imprimeArgumentos2(23,true,false,'Adrian','Hello');
 //recordar que el 10 se extrae arriba por eso no viene la edad cuando se imprimen los argumentos
 console.log({casado, vivo, nombre, saludo});
 

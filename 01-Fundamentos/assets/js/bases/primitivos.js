@@ -27,9 +27,10 @@ console.log(typeof superPoder);
 let soyNull = null;
 console.log(typeof soyNull);
 
-let symbol1 = Symbol('a');
+let symbol1 = Symbol('a'); // El principal de uso de un Symbol es identificar propiedades de manera única
 let symbol2 = Symbol('a');
 
 console.log(typeof symbol1);
+console.log(symbol1);
 
 console.log(symbol1 === symbol2);

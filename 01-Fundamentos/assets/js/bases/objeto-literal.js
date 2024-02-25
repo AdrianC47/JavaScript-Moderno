@@ -27,7 +27,7 @@ console.log('Numero de Trajes: ',personaje.trajes.length);
 //Esta Correcto
 console.log('Ultimo Traje: ',personaje.trajes[personaje.trajes.length-1]);
 
-const x = 'vivo';
+const x = 'codeName';
 console.log('Vivo', personaje[x]);
 
 console.log('Última Película', personaje['ultima-pelicula'])
@@ -39,17 +39,17 @@ console.log( personaje );
 
 personaje.casado = true;
 
-const entriesPares = Object.entries( personaje );
-console.log( entriesPares );
+const entriesPares = Object.entries( personaje ); // convierte al objeto en un arreglo y cada cada valor del objeto en un arreglo
+console.log( entriesPares ); // es decir es un arreglo de arreglos clave valor
 
 // personaje = true;
  
-//Para yo poder poner mis atributos que no se puedan cambiar hago lo siguiente
+//Para yo poder poner mis atributos que no se puedan cambiar es decir que sea inmutable o incambiable mi objeto  hago lo siguiente
 Object.freeze (personaje);
 
 personaje.dinero = 100000000;
 personaje.casado = false;
-//Cuando son objetos dentro de otros objetos si se cambian los atributos
+//Sin embargo Cuando son objetos dentro de otros objetos si se cambian los atributos al menos que se use nuevamente el freeze sobre el objeto 
 personaje.direccion.ubicacion = 'Costa Rica'; 
 //si yo quisiera que no se cambien  deberia usar el Object.freeze(direccion)
 console.log(personaje);

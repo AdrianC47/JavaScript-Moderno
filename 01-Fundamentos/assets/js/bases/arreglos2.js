@@ -9,7 +9,7 @@ console.log('Ultimo: ', ultimo);
 
 //Si quiero recorrer todo mi arreglo puedo usar un foreach
 
-juegos.forEach( (elemento, indice, arreglo) => {
+juegos.forEach( (elemento, indice, arreglo) => { //valor, indice y se manda el arreglo entero como tal por si fuese necesario
     console.log(elemento,indice,arreglo);
 } ); 
 
@@ -36,7 +36,7 @@ let juegosBorrados= juegos.splice(pos, 2);
 console.log({juegosBorrados, juegos});
 
 let metroidIndex = juegos.indexOf('Metroid'); //Es CaseSensitive, con el indexof busco el indice de un elemento de un arreglo
-console.log({metroidIndex})
+console.log({metroidIndex}) // Si el indexOf retorna -1 es porque no encontró el elemento
 
 // TODO: Referencia
 

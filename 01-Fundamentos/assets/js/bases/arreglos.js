@@ -5,7 +5,7 @@
 //console.log(arr);
 
 let videojuegos = [ 'Zelda', 'Mario', 'FIFA'];
-console.log({ videojuegos });
+console.log({ videojuegos }); 
 
 console.log(videojuegos[0]);
 

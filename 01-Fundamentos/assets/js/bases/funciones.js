@@ -1,24 +1,25 @@
 function saludar(nombre) {
 //    console.log(arguments);//Con esto imprimo los argumentos de la funcion asi no sean usados
-//  console.log("Hola " +nombre);
+    console.log("Hola " +nombre);
     return [1,2] ;//cuando se encuentra un return se sale de la funcion
 
     console.log("Soy un código que está después del return"); //este mensaje nunca se va a ejecutar
 }
 //Siempre primero creo las funciones luego las llamo
 
-//Otra forma de definir funciones sería
+saludar("AdryC47");
+//Otra forma de definir funciones sería con las funciones anonimas asignadas a variables
 const saludar2 = function(nombre) { //esta sería la mejor pero no la tradicional
     console.log("Hola " +nombre);
 }
 
 //Funciones de Flecha
 
-const saludarFlecha = () => {
+const saludarFlecha = () => {  
     console.log("Hello Friend");
 }
 
-const saludarFlecha2 = (nombre) => { // los parentesis del argumento son opcionales pero es buena practica ponerlos
+const saludarFlecha2 = (nombre) => { // los parentesis del argumento son opcionales cuando se manda un solo argumento pero es buena practica ponerlos
     console.log("Hello Friend " + nombre);
 }
 
@@ -35,12 +36,18 @@ function sumar (a, b){
     return a + b;
 }
 
-//Pueod resumir la siguiente funcion (solo si tiene una linea)
+//Puedo resumir la siguiente funcion (solo si tiene una linea)
 // const sumar2 = (a,b) =>{
 //     return a + b;
 // }
 //en
 const sumar2 = (a,b) => a+b;
+
+// const restar = (a,b)=> {
+//     return a-b;
+// }
+
+const restar2 = (a,b)=>a-b;
 
 function getAleatorio (){
     return Math.random();
@@ -52,6 +59,7 @@ const getAleatorio2 = ()=> Math.random();
 
 
 console.log(  sumar2(1,2) );
+console.log(restar2(10,4));
 console.log(getAleatorio()); 
 console.log(getAleatorio2());
 
