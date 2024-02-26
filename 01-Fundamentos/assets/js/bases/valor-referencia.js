@@ -41,7 +41,7 @@ console.log({juan, ana});
 
 //Ahora como soluciono acá?
 // de la misma forma pongo a persona como si fuera un objeto y uso los ... 
-const cambiaNombre = ({...persona}) =>{
+const cambiaNombre = ({...persona}) =>{ //tomar en cuenta que se usan las llaves y parentesis
      persona.nombre = 'Tony';
      return persona;
 }
@@ -57,16 +57,18 @@ console.log({peter,tony});
 const frutas = ['Manzana', 'Pera','Piña'];
 //const otrasFrutas = [...frutas];//en el caso de arreglos sería el ... entre los corchetes // <===FUNCIONA DE ESTA FORMA TAMBIEN
 
-console.time('slice');//esto es una bandera //Inicia un TIMER AQUI
+// EXISTE OTRA MANERA LA CUAL ES USANDO EL SLICE
+
+console.time('slice');//esto es una bandera //Inicia un TIMER AQUI esto se lo hace para evaluar tiempos de ejecucion
 
 const otrasFrutas = frutas.slice(); //SEGUNDO METODO ,TAMBIEN FUNCIONA
 //El slice es un metodo de los arreglos que dice Ok corta el arreglo  y regresa los elemmentos que especifico
 //pero si no mando ningun argumento  esto regresa un nuevo arreglo rompiendo dicha relacion
 
-console.timeEnd('slice'); //TERMINALO ACA 
+console.timeEnd('slice'); //TERMINALO ACA aqui termina la evluacion del tiempo
 
 console.time('spread');//esto es una bandera //Inicia un TIMER AQUI
-const otrasFrutas2 = frutas.slice(); //SEGUNDO METODO ,TAMBIEN FUNCIONA
+const otrasFrutas2 = [...frutas]; //SEGUNDO METODO ,TAMBIEN FUNCIONA
 console.timeEnd('spread'); //TERMINALO ACA 
 
 otrasFrutas.push('Mango');
@@ -77,3 +79,5 @@ console.table({frutas, otrasFrutas});
 //pero hay maneras en las que se puede evaluar 
 //se puede observar que arriba se usa el console.time y el console.timeEnd pues ahí yo con un timmer mido el tiempo
 //de ejecución y puede ir sacando conclusiones al respecto
+// *Segun los tiempos pues el spread es mucho mas eficiente que el slice pero al intercambiar el orden pues los resultados varian menos  por lo que se concluye
+// que esto ya es como JS ejecuta el codigo y personamente  es mas eficiente el spread 
