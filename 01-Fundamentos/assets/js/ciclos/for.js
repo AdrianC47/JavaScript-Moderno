@@ -14,6 +14,9 @@ for (let i in heroes) { //el For in hace lo mismo que el for tradicional pero mu
 }
 
 console.warn('For Of');
-for (let heroe of heroes) { //el For of hace lo mismo que el for tradicional pero mucho mas limpio y no debo indicar
-    console.log(heroe);     //que en mi arreglo haga algo sobre cierta posicion sino solo mando el iterador
+//el For of hace lo mismo que el for tradicional pero mucho mas limpio y no debo indicar
+// el indice, lo normal es usar aquí directo el singular del arreglo osea de heroes seria heroe
+
+for (let heroe of heroes) { 
+    console.log(heroe);     
 }

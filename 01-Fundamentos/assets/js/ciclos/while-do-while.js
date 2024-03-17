@@ -1,7 +1,7 @@
 
 
 const carros = ['Ford', 'Mazda', 'Honda', 'Toyota'];
-
+console.log("Bucle While")
 let i = 0;
 // while (i < carros.length) { // se aconseja que la condicion sea verdadera
 //     console.log(carros[i]);
@@ -27,8 +27,8 @@ while (carros[i]) { // se aconseja que la condicion sea verdadera
 }
 
 console.warn('Do While');
-let j=10;
+let j=2;
 do {
     console.log(carros[j]);
     j++;
-} while(carros[j]);
+} while(carros[j]); //se imprime hasta que existe el lugar con el indice donde se asigna la posición

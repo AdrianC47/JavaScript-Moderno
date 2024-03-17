@@ -16,7 +16,7 @@ const amigosArrr = [
 
 console.log(amigosArrr);
 
-const nota = 82; //A+ A B+
+const nota = 92; //A+ A B+
 const grado  = nota >=95? 'A+' : 
                nota >=90? 'A' :
                nota >=85? 'B+' :
