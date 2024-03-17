@@ -22,6 +22,11 @@ const imprimeArgumentos2 = (edad, ...args) =>{
     //console.log({edad ,args});
     return args;
 };
+
+const imprimeGruposDeMusica = (genero, ...args) =>{
+    // return genero;
+    console.log({genero,args});
+}
 //ojo que luego de usar el ... (rest) no puede venir ningun otro argumento
 //es decir esto estaria mal ...args, otracosa
 
@@ -30,6 +35,7 @@ const [casado, vivo, nombre, saludo] = imprimeArgumentos2(23,true,false,'Adrian'
 //recordar que el 10 se extrae arriba por eso no viene la edad cuando se imprimen los argumentos
 console.log({casado, vivo, nombre, saludo});
 
+console.log(imprimeGruposDeMusica("Glam Metal","Skid Row","White Lion","Cinderella"))
 
 const { apellido:nuevoNombreDeVariableApellido } = crearPersona('Henry','Ordoñez'); 
 console.log({nuevoNombreDeVariableApellido});

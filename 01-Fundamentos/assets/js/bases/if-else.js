@@ -49,18 +49,18 @@ if (dia === 0) {
 // Sin usar If Else,  o Switch , únicamente objetos o arreglos
 // impriman en consola el dia de la semana
 
-dia = 5; // 0:domingo, 1 :lunes....
+dia = 9; // 0:domingo, 1 :lunes....
 let diaLetras= {0:()=>'Domingo - 0 ',
                 1:()=>'Lunes - 1' ,  
                 2:()=>'Martes - 2'  ,
                 3:()=>'Miércoles - 3',
                 4:()=>'Jueves - 4'  ,
                 5:()=>'Viernes - 5',
-                6:()=>'Sabado - 6'  }
-console.log(diaLetras[dia]()|| 'Día no definido');
+                6:()=>'Sabado - 6'  } // se creó un objeto
+console.log(diaLetras[dia]|| 'Día no definido');
 
 //Correcto
 //Ahora con arreglos iría así
-const diaLetras2= ['Domingo - 0 ','Lunes - 1' ,  'Martes - 2'  ,'Miércoles - 3','Jueves - 4'  ,'Viernes - 5','Sabado - 6'  ];
+const diaLetras2= ['Domingo - 0 ','Lunes - 1' ,  'Martes - 2'  ,'Miércoles - 3','Jueves - 4'  ,'Viernes - 5','Sabado - 6'];
 
 console.log(diaLetras2[dia]);
